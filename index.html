@@ -3,62 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Para Marianita ❤️</title>
+    <title>¡Feliz Cumpleaños, Marianita! 🎉</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <audio id="musica" src="assets/cancion.mp3"></audio>
 
-    <audio id="musica-fondo" src="Rauw_Alejandro_-_Aquel_Nap_ZzZz_Audio_Oficial.mp3" loop></audio>
-
-    <!-- PANTALLA 1 -->
-    <section id="p1" class="pantalla activa">
-        <div class="tarjeta-cristal">
-            <h1>¡Feliz Cumpleaños, mi Marianita! 🎂🎉</h1>
-            <button class="btn-interactivo" onclick="iniciarExperiencia(event, 'p2')">Empezar el recorrido ❤️🚀</button>
+    <!-- PANTALLA 1: INICIO -->
+    <div class="screen" id="screen1">
+        <div class="container-inicio">
+            <h1 class="titulo-inicio">✨ ¡Feliz Cumpleaños, mi Marianita! 🎂</h1>
+            <p class="subtitulo-inicio">🎵 Tengo preparado un viaje muy especial.<br>Sube el volumen 🔊, relájate 😌 y tómate tu tiempo para leer...
+            </p>
+            <button class="btn-start" onclick="iniciarMusica(); cambiarPantalla(2); efectoCorazones(event)">
+                🚀 Empezar el recorrido
+            </button>
         </div>
-    </section>
+        <div class="fondo-animado"></div>
+    </div>
 
-    <!-- PANTALLAS DE FOTOS -->
-    <section id="p2" class="pantalla">
-        <img src="IMG_6983.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p2', 'p3')">Siguiente</button>
-    </section>
-    <section id="p3" class="pantalla">
-        <img src="IMG_6984.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p3', 'p4')">Siguiente</button>
-    </section>
-    <section id="p4" class="pantalla">
-        <img src="IMG_6985.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p4', 'p5')">Siguiente</button>
-    </section>
-    <section id="p5" class="pantalla">
-        <img src="IMG_6986.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p5', 'p6')">Siguiente</button>
-    </section>
-    <section id="p6" class="pantalla">
-        <img src="IMG_6987.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p6', 'p7')">Siguiente</button>
-    </section>
-    <section id="p7" class="pantalla">
-        <img src="IMG_6988.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p7', 'p8')">Siguiente</button>
-    </section>
-    <section id="p8" class="pantalla">
-        <img src="IMG_6989.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p8', 'p9')">Siguiente</button>
-    </section>
-    <section id="p9" class="pantalla">
-        <img src="IMG_6990.PNG" class="foto-carta">
-        <button onclick="avanzar(event, 'p9', 'p10')">Último recuerdo</button>
-    </section>
+    <!-- PANTALLA 2: EL SOBRE -->
+    <div class="screen" id="screen2">
+        <div class="container-screen">
+            <div class="envelope" id="envelope">
+                <div class="envelope-front">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body"></div>
+                </div>
+                <div class="envelope-content">
+                    <h2>💌 ¡Querida Marianita! 💕</h2>
+                    <p>Hoy celebramos que el mundo 🌍 es mucho más hermoso desde que existes ✨</p>
+                    <p>Desde que te conocí, mi corazón ❤️ late más rápido que WiFi gratis 📶</p>
+                    <p>Si fueras un algoritmo, serías el más perfecto 🤖💯</p>
+                    <p>Hoy sumas un año más a tu sistema operativo 🎂⚙️</p>
+                </div>
+            </div>
+            <img src="assets/fotos/foto1.png" alt="Foto 1" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(3)">📧 Siguiente carta</button>
+        </div>
+    </div>
 
-    <!-- PANTALLA DE VIDEO (Nombre largo del archivo) -->
-    <section id="p10" class="pantalla">
-        <h2>Nuestro 24 de diciembre ❤️</h2>
-        <video src="436fb506b6fc91979548cac8291848..." controls playsinline class="video-final"></video>
-        <button class="btn-interactivo" onclick="reiniciar(event)">Volver a empezar 🔄</button>
-    </section>
+    <!-- PANTALLA 3: REPOSITORIO -->
+    <div class="screen" id="screen3">
+        <div class="container-screen">
+            <h2>📚 Capítulo 2: Mis mejores deseos 🌟</h2>
+            <div class="content-box">
+                <p>Si nuestra relación fuera un repositorio 💻, tú serías el <code>main branch</code> ⭐</p>
+                <p>Deseo que tus funciones diarias hagan un <code>return success</code> ✅, y tu felicidad no tenga límites 😄</p>
+            </div>
+            <img src="assets/fotos/foto2.png" alt="Foto 2" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(4)">🏃 Siguiente nivel</button>
+        </div>
+    </div>
 
-    <script src="script_v2.js"></script>
+    <!-- PANTALLA 4: BASE DE DATOS -->
+    <div class="screen" id="screen4">
+        <div class="container-screen">
+            <h2>📇 Nuestra Base de Datos 💎</h2>
+            <div class="content-box">
+                <p>¡Ni el servidor más gigante tendría almacenamiento suficiente para nuestros recuerdos! 🌐💾</p>
+                <p>Tienes un índice prioritario en mi memoria 🧠✨</p>
+            </div>
+            <img src="assets/fotos/foto3.png" alt="Foto 3" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(5)">▶️ Continuar</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 5: SEGURIDAD -->
+    <div class="screen" id="screen5">
+        <div class="container-screen">
+            <h2>🔐 Acceso Exclusivo y Seguro 🛡️</h2>
+            <div class="content-box">
+                <p>Tú tienes la llave maestra 🔑✨</p>
+                <p>Mi cariño hacia ti está encriptado de extremo a extremo 🔒💕, inmune a cualquier virus 🦠❌</p>
+                <p>¡Eres mi lugar más seguro! 🏰😊</p>
+            </div>
+            <img src="assets/fotos/foto4.png" alt="Foto 4" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(6)">👁️ Ver más</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 6: CACHE DE RECUERDOS -->
+    <div class="screen" id="screen6">
+        <div class="container-screen">
+            <h2>💾 Cache de Recuerdos 🌈</h2>
+            <div class="content-box">
+                <p>Cada momento contigo está cacheado en mi memoria RAM 🧠⚡</p>
+                <p>Eres el proceso más importante en mi sistema operativo 🖥️❤️</p>
+                <p>Tu sonrisa es un <code>buffer overflow</code> de felicidad 😊✨</p>
+            </div>
+            <img src="assets/fotos/foto5.png" alt="Foto 5" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(7)">🌐 Siguiente</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 7: API DE AMOR -->
+    <div class="screen" id="screen7">
+        <div class="container-screen">
+            <h2>💕 API de Amor 🔗</h2>
+            <div class="content-box">
+                <p>GET /amor => 💯% puro 🌟</p>
+                <p>POST /besos => ∞ efectos positivos 😘</p>
+                <p>DELETE /tristeza => ✖️ No encontrado 🎉</p>
+                <p>¡Tu documentación es perfecta! 📖💬</p>
+            </div>
+            <img src="assets/fotos/foto6.png" alt="Foto 6" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(8)">🚀 Desplegar</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 8: DEPLOY DE SUEÑOS -->
+    <div class="screen" id="screen8">
+        <div class="container-screen">
+            <h2>🌙 Deploy de Sueños 🎪</h2>
+            <div class="content-box">
+                <p>Cada noche deployamos nuevos sueños 🌑✨</p>
+                <p>Status: <span class="status-active">● ONLINE 🟢</span></p>
+                <p>Uptime: <code>∞ años contigo</code> 💪❤️</p>
+                <p>¡Zero downtime en nuestro amor! 📈💯</p>
+            </div>
+            <img src="assets/fotos/foto7.png" alt="Foto 7" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(9)">💾 Backup</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 9: BACKUP DEL CORAZÓN -->
+    <div class="screen" id="screen9">
+        <div class="container-screen">
+            <h2>💖 Backup del Corazón 🔄</h2>
+            <div class="content-box">
+                <p>He hecho múltiples backups de ti en mi corazón 💾❤️</p>
+                <p>Versión actual: <code>v∞.0</code> - Infinitamente mejorada 🔝✨</p>
+                <p>Redundancia: Triplicada en mi mente, corazón y alma 🧠💕👻</p>
+            </div>
+            <img src="assets/fotos/foto8.png" alt="Foto 8" class="foto-screen">
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(10)">🎨 Sorpresa Visual</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 10: BINARIO DEL AMOR -->
+    <div class="screen" id="screen10">
+        <div class="container-screen">
+            <h2>⚙️ El Código del Amor 💻</h2>
+            <div class="binary-animation">
+                <div class="binary-text">01110100 01100101 00100000 01100001 01101101 01101111</div>
+                <div class="binary-text">01100001 01101101 01101111 00100000 01101101 01110101 01100011 01101000 01100111</div>
+                <div class="binary-text">01110100 01100101 00100000 01100001 01101101 01101111</div>
+            </div>
+            <p class="binary-decode">Te amo... Te amo muchísimo... 💕✨</p>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(11)">🌀 Siguiente</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 11: MATRIZ DE SENTIMIENTOS -->
+    <div class="screen" id="screen11">
+        <div class="container-screen">
+            <h2>🎬 Matriz de Sentimientos 💬</h2>
+            <div class="matrix-container">
+                <div class="matrix-rain">
+                    <span>💕</span> <span>✨</span> <span>😊</span> <span>🎉</span> <span>💕</span>
+                </div>
+                <div class="matrix-rain" style="animation-delay: 0.5s;">
+                    <span>😍</span> <span>🌟</span> <span>🎂</span> <span>✨</span> <span>😍</span>
+                </div>
+                <div class="matrix-rain" style="animation-delay: 1s;">
+                    <span>🎉</span> <span>💕</span> <span>✨</span> <span>😊</span> <span>🎉</span>
+                </div>
+            </div>
+            <p>¡Cada número representa un momento contigo! 🌈📊</p>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(12)">💝 Continuar</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 12: PULSO DEL CORAZÓN -->
+    <div class="screen" id="screen12">
+        <div class="container-screen">
+            <h2>❤️ Pulso del Corazón 📈</h2>
+            <div class="heart-pulse">
+                <svg viewBox="0 0 100 100" class="heartbeat-chart">
+                    <polyline points="5,50 15,50 20,30 30,70 40,40 50,60 60,35 70,55 80,45 90,50 95,50" 
+                        fill="none" stroke="#ff69b4" stroke-width="2" vector-effect="non-scaling-stroke"/>
+                </svg>
+            </div>
+            <p>Mi corazón acelerado ⚡❤️ cada vez que te veo 😍</p>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(13)">🌠 Galaxia</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 13: GALAXIA DE MOMENTOS -->
+    <div class="screen" id="screen13">
+        <div class="container-screen">
+            <h2>🌌 Galaxia de Momentos ✨</h2>
+            <div class="galaxy-container">
+                <div class="star">⭐</div>
+                <div class="star">💬</div>
+                <div class="star">✨</div>
+                <div class="star">🌟</div>
+                <div class="star">⭐</div>
+                <div class="star">💕</div>
+                <div class="star">✨</div>
+                <div class="star">🌟</div>
+            </div>
+            <p>Cada estrella es un recuerdo perfecto contigo 🌠💖</p>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(14)">📸 Galería</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 14: GALERÍA -->
+    <div class="screen" id="screen14">
+        <div class="container-screen">
+            <h2>🖼️ Galería de Momentos 📸</h2>
+            <div class="gallery-container">
+                <img src="assets/fotos/foto9.png" alt="Foto 9" class="gallery-img">
+                <img src="assets/fotos/foto5.png" alt="Foto 5" class="gallery-img">
+                <img src="assets/fotos/foto3.png" alt="Foto 3" class="gallery-img">
+                <img src="assets/fotos/foto7.png" alt="Foto 7" class="gallery-img">
+            </div>
+            <p>Momentos que hacen especial nuestros días 💞✨</p>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(15)">🎬 Final</button>
+        </div>
+    </div>
+
+    <!-- PANTALLA 15: FINAL CON VIDEO -->
+    <div class="screen" id="screen15">
+        <div class="container-screen">
+            <h2>🎥 ¡Un Mensaje Especial! 💕</h2>
+            <video src="assets/video_final.mp4" controls playsinline class="video-final"></video>
+            <div class="final-message">
+                <p>✨ Marianita, cada día contigo es un regalo 🎁</p>
+                <p>💕 Eres mi persona favorita en todo el universo 🌍💬</p>
+                <p>🎉 ¡Que tengas un cumpleaños tan especial como Tú! 🎂😍</p>
+                <p>🚀 Muchas aventuras más juntos... 🌈❤️</p>
+            </div>
+            <button class="btn-next" onclick="efectoCorazones(event); cambiarPantalla(1)">🔄 Volver al inicio</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
