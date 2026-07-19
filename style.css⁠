@@ -1,0 +1,7 @@
+body { background: #0a0a0a; color: #ff0044; font-family: 'Poppins', sans-serif; text-align: center; }
+.tarjeta-cristal { background: #1a1a1a; border: 1px solid #ff0044; padding: 20px; border-radius: 15px; margin: 20px; }
+.foto-carta { width: 100%; max-width: 300px; border-radius: 10px; border: 2px solid #ff0044; }
+.btn-interactivo { background: #ff0044; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 15px; }
+.pantalla { display: none; }
+.pantalla.activa { display: block; }
+.video-final { width: 100%; border-radius: 10px; }
