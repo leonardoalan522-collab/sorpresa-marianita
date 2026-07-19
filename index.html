@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Para Marianita ❤️</title>
+</head>
+<body>
+
+    <audio id="musica-fondo" src="Rauw_Alejandro_-_Aquel_Nap_ZzZz_Audio_Oficial.mp3" loop></audio>
+
+    <!-- PANTALLA 1 -->
+    <section id="p1" class="pantalla activa">
+        <div class="tarjeta-cristal">
+            <h1>¡Feliz Cumpleaños, mi Marianita! 🎂🎉</h1>
+            <button class="btn-interactivo" onclick="iniciarExperiencia(event, 'p2')">Empezar el recorrido ❤️🚀</button>
+        </div>
+    </section>
+
+    <!-- PANTALLAS DE FOTOS -->
+    <section id="p2" class="pantalla">
+        <img src="IMG_6983.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p2', 'p3')">Siguiente</button>
+    </section>
+    <section id="p3" class="pantalla">
+        <img src="IMG_6984.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p3', 'p4')">Siguiente</button>
+    </section>
+    <section id="p4" class="pantalla">
+        <img src="IMG_6985.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p4', 'p5')">Siguiente</button>
+    </section>
+    <section id="p5" class="pantalla">
+        <img src="IMG_6986.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p5', 'p6')">Siguiente</button>
+    </section>
+    <section id="p6" class="pantalla">
+        <img src="IMG_6987.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p6', 'p7')">Siguiente</button>
+    </section>
+    <section id="p7" class="pantalla">
+        <img src="IMG_6988.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p7', 'p8')">Siguiente</button>
+    </section>
+    <section id="p8" class="pantalla">
+        <img src="IMG_6989.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p8', 'p9')">Siguiente</button>
+    </section>
+    <section id="p9" class="pantalla">
+        <img src="IMG_6990.PNG" class="foto-carta">
+        <button onclick="avanzar(event, 'p9', 'p10')">Último recuerdo</button>
+    </section>
+
+    <!-- PANTALLA DE VIDEO (Nombre largo del archivo) -->
+    <section id="p10" class="pantalla">
+        <h2>Nuestro 24 de diciembre ❤️</h2>
+        <video src="436fb506b6fc91979548cac8291848..." controls playsinline class="video-final"></video>
+        <button class="btn-interactivo" onclick="reiniciar(event)">Volver a empezar 🔄</button>
+    </section>
+
+    <script src="script_v2.js"></script>
+</body>
+</html>
