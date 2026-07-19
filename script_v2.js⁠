@@ -1,0 +1,11 @@
+function iniciarExperiencia(e, targetId) {
+    document.getElementById('musica-fondo').play();
+    avanzar(e, 'p1', targetId);
+}
+function avanzar(e, currentId, nextId) {
+    document.getElementById(currentId).classList.remove('activa');
+    document.getElementById(nextId).classList.add('activa');
+}
+function reiniciar(e) {
+    window.location.reload();
+}
