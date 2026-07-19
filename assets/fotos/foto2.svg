@@ -1,0 +1,28 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ff69b4;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgGrad2)"/>
+  <text x="20" y="60" font-size="50">💝</text>
+  <text x="340" y="100" font-size="50">💖</text>
+  <circle cx="200" cy="120" r="65" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="155" cy="65" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="245" cy="65" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="175" cy="105" r="18" fill="white"/>
+  <circle cx="225" cy="105" r="18" fill="white"/>
+  <circle cx="175" cy="105" r="10" fill="black"/>
+  <circle cx="225" cy="105" r="10" fill="black"/>
+  <circle cx="180" cy="100" r="4" fill="white"/>
+  <circle cx="230" cy="100" r="4" fill="white"/>
+  <path d="M 185 140 Q 200 150 215 140" stroke="#1E40AF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="200" rx="70" ry="85" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <text x="185" y="230" font-size="80" text-anchor="middle">💕</text>
+  <text x="70" y="300" font-size="40">💗</text>
+  <text x="320" y="310" font-size="40">💓</text>
+  <text x="100" y="450" font-size="45">💖</text>
+  <text x="280" y="460" font-size="45">💝</text>
+  <text x="200" y="480" font-size="40" text-anchor="middle">💕</text>
+</svg>

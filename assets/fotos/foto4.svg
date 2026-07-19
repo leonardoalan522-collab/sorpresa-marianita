@@ -1,0 +1,34 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#db70db;stop-opacity:0.15" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgGrad4)"/>
+  <circle cx="200" cy="100" r="60" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="160" cy="55" rx="18" ry="32" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="240" cy="55" rx="18" ry="32" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="175" cy="90" r="16" fill="white"/>
+  <circle cx="225" cy="90" r="16" fill="white"/>
+  <circle cx="175" cy="90" r="9" fill="black"/>
+  <circle cx="225" cy="90" r="9" fill="black"/>
+  <circle cx="180" cy="85" r="3" fill="white"/>
+  <circle cx="230" cy="85" r="3" fill="white"/>
+  <path d="M 190 120 Q 200 130 210 120" stroke="#1E40AF" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="220" rx="65" ry="80" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="135" cy="210" rx="22" ry="42" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(-35 135 210)"/>
+  <ellipse cx="265" cy="210" rx="22" ry="42" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(35 265 210)"/>
+  <circle cx="115" cy="245" r="16" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="285" cy="245" r="16" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="160" cy="300" rx="18" ry="32" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="240" cy="300" rx="18" ry="32" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="160" cy="340" rx="22" ry="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="240" cy="340" rx="22" ry="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <text x="185" y="255" font-size="65">💕</text>
+  <text x="60" y="80" font-size="32">💖</text>
+  <text x="310" y="100" font-size="32">💗</text>
+  <text x="80" y="400" font-size="38">💓</text>
+  <text x="280" y="410" font-size="38">💝</text>
+  <text x="200" y="480" font-size="35" text-anchor="middle">💖</text>
+</svg>

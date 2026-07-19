@@ -1,0 +1,42 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff69b4;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#ffb6d9;stop-opacity:0.25" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgGrad3)"/>
+  <circle cx="200" cy="180" r="65" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="155" cy="125" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="245" cy="125" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="175" cy="165" r="18" fill="white"/>
+  <circle cx="225" cy="165" r="18" fill="white"/>
+  <circle cx="175" cy="165" r="10" fill="#000080"/>
+  <circle cx="225" cy="165" r="10" fill="#000080"/>
+  <circle cx="180" cy="160" r="4" fill="white"/>
+  <circle cx="230" cy="160" r="4" fill="white"/>
+  <path d="M 185 200 Q 200 215 215 200" stroke="#1E40AF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="280" rx="70" ry="85" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="130" cy="270" rx="25" ry="45" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(-30 130 270)"/>
+  <ellipse cx="270" cy="270" rx="25" ry="45" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(30 270 270)"/>
+  <circle cx="110" cy="300" r="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="290" cy="300" r="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="165" cy="360" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="235" cy="360" rx="20" ry="35" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="165" cy="400" rx="25" ry="20" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="235" cy="400" rx="25" ry="20" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <text x="185" y="310" font-size="70" text-anchor="middle" filter="url(#glow)">💖</text>
+  <text x="50" y="100" font-size="35">💕</text>
+  <text x="330" y="130" font-size="35">💗</text>
+  <text x="40" y="450" font-size="40">💓</text>
+  <text x="330" y="450" font-size="40">💝</text>
+  <text x="150" y="50" font-size="30">💕</text>
+  <text x="250" y="50" font-size="30">💖</text>
+</svg>

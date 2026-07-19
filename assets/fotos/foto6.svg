@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1493;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ffb6d9;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bgGrad6)"/>
+  <text x="25" y="100" font-size="48">💖</text>
+  <text x="340" y="150" font-size="48">💕</text>
+  <text x="30" y="460" font-size="45">💗</text>
+  <text x="320" y="490" font-size="45">💓</text>
+  <circle cx="200" cy="140" r="63" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="157" cy="85" rx="19" ry="34" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="243" cy="85" rx="19" ry="34" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="176" cy="127" r="17" fill="white"/>
+  <circle cx="224" cy="127" r="17" fill="white"/>
+  <circle cx="176" cy="127" r="9" fill="#000080"/>
+  <circle cx="224" cy="127" r="9" fill="#000080"/>
+  <circle cx="181" cy="122" r="4" fill="white"/>
+  <circle cx="229" cy="122" r="4" fill="white"/>
+  <path d="M 188 155 Q 200 168 212 155" stroke="#1E40AF" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <ellipse cx="200" cy="270" rx="67" ry="81" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="130" cy="260" rx="23" ry="45" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(-33 130 260)"/>
+  <ellipse cx="270" cy="260" rx="23" ry="45" fill="#4169E1" stroke="#1E40AF" stroke-width="2" transform="rotate(33 270 260)"/>
+  <circle cx="108" cy="295" r="16" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <circle cx="292" cy="295" r="16" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="163" cy="350" rx="18" ry="33" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="237" cy="350" rx="18" ry="33" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="163" cy="391" rx="23" ry="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <ellipse cx="237" cy="391" rx="23" ry="18" fill="#4169E1" stroke="#1E40AF" stroke-width="2"/>
+  <text x="185" y="305" font-size="70">💕</text>
+  <text x="170" y="55" font-size="32">💝</text>
+  <text x="230" y="55" font-size="32">💓</text>
+  <text x="200" y="485" font-size="38" text-anchor="middle">💖</text>
+</svg>
